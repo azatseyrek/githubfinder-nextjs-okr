@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import UserResults from '../components/users/UserResult';
 import UserSearch from '../components/users/UserSearch';
 
 import styles from '../styles/Home.module.css';
@@ -15,7 +14,6 @@ export default function Home() {
       </Head>
 
       <UserSearch />
-      <UserResults />
     </div>
   );
 }

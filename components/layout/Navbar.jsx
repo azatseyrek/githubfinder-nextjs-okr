@@ -6,35 +6,33 @@ import {useRouter} from 'next/router';
 const Navbar = ({title}) => {
   const router = useRouter();
   return (
-    <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
-      <div className="container mx-auto flex justify-between items-center ">
-        <div className="flex-none px-2 mx-2 group">
-          <FaGithub
-            onClick={() => router.push('/')}
-            className="inline pr-2 text-5xl transition-all hover: cursor-pointer  group-active:text-4xl"
-          />
+    <nav className="flex w-full px-6 h-16 items-center justify-between mb-12 shadow-lg bg-neutral text-neutral-content">
+      <div className="px-2 mx-2 group">
+        <FaGithub
+          onClick={() => router.push('/')}
+          className="inline pr-2 text-5xl transition-all hover: cursor-pointer  group-active:scale-95"
+        />
+        <Link
+          href="/"
+          className="text-lg font-bold align-middle hover:text-primary-content transition-all active:scale-95"
+        >
+          {title}
+        </Link>
+      </div>
+      <div className="px-2 mx-2 ">
+        <div className="flex items-center  h-full gap-8">
           <Link
             href="/"
-            className="text-lg font-bold align-middle hover:text-primary-content transition-all active:text-sm"
+            className="btn btn-ghost btn-sm rounded-btn hover:text-primary-content"
           >
-            {title}
+            Home
           </Link>
-        </div>
-        <div className="flex-1 px-2 mx-2 ">
-          <div className="flex justify-end h-full gap-8">
-            <Link
-              href="/"
-              className="btn btn-ghost btn-sm rounded-btn hover:text-primary-content"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="btn btn-ghost btn-sm rounded-btn hover:text-primary-content"
-            >
-              About
-            </Link>
-          </div>
+          <Link
+            href="/about"
+            className="btn btn-ghost btn-sm rounded-btn hover:text-primary-content"
+          >
+            About
+          </Link>
         </div>
       </div>
     </nav>
