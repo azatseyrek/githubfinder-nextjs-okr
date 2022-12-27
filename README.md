@@ -2,7 +2,7 @@
 
 <h1 align="center">⚡ GITHUB HRAPP ⚡</h1>
 
-DEMO : <a href="">Demo Link</a>
+DEMO : <a href="https://githubfinder-nextjs-okr.vercel.app/">Demo Link</a>
 
 <p>This is GITHUB HRAPP  built on  NextJS</p>
 
@@ -26,4 +26,4 @@ DEMO : <a href="">Demo Link</a>
 
 ![User Detail Page](./public/screenshoots/user-detail.png)
 
-DEMO : <a href="">Demo Link</a>
+DEMO : <a href="https://githubfinder-nextjs-okr.vercel.app/">Demo Link</a>
