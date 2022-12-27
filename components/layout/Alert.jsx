@@ -10,9 +10,9 @@ const Alert = () => {
 
   return (
     <div
-      className={`alert alert-${alert.type} w-screen shadow-lg rounded-none opacity-80 `}
+      className={`alert alert-${alert.type} shadow-lg rounded-none opacity-80 `}
     >
-      <div>
+      <div className="flex w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="stroke-current flex-shrink-0 h-6 w-6 text-primary-content"

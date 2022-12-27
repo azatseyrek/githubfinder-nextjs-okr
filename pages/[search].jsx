@@ -1,5 +1,5 @@
+import {useContext} from 'react';
 import {useRouter} from 'next/router';
-import {useContext, useEffect, useState} from 'react';
 import UserItem from '../components/users/UserItem';
 import AlertContext from '../context/alert/AlertContext';
 import {fetchSearchUsers} from '../services';

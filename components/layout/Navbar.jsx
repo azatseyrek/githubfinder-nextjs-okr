@@ -1,9 +1,8 @@
 import {FaGithub} from 'react-icons/fa';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
-const Navbar = ({title}) => {
+const Navbar = () => {
   const router = useRouter();
   return (
     <nav className="flex w-full px-6 h-16 items-center justify-between mb-12 shadow-lg bg-neutral text-neutral-content">
@@ -16,7 +15,7 @@ const Navbar = ({title}) => {
           href="/"
           className="text-lg font-bold align-middle hover:text-primary-content transition-all active:scale-95"
         >
-          {title}
+          Github Finder
         </Link>
       </div>
       <div className="px-2 mx-2 ">
@@ -37,14 +36,6 @@ const Navbar = ({title}) => {
       </div>
     </nav>
   );
-};
-
-Navbar.defaultProps = {
-  title: 'Github Finder',
-};
-
-Navbar.propTypes = {
-  title: PropTypes.string,
 };
 
 export default Navbar;
